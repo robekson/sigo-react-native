@@ -1,0 +1,49 @@
+{
+  "name": "Venda",
+  "fields": [
+    {
+      "fieldName": "quantidade",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "data",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "dataEntrega",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "valor",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "produto",
+      "otherEntityRelationshipName": "venda",
+      "relationshipName": "produto"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "funcionario",
+      "otherEntityRelationshipName": "venda",
+      "relationshipName": "funcionario",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200910192226",
+  "entityTableName": "venda",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["sigo"]
+}

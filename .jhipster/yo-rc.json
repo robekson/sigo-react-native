@@ -1,0 +1,62 @@
+{
+	"generator-jhipster": {
+		"authenticationType": "jwt",
+		"cacheProvider": "ehcache",
+		"clientFramework": "angularX",
+		"serverPort": "8080",
+		"serviceDiscoveryType": false,
+		"skipUserManagement": false,
+		"baseName": "sigo",
+		"buildTool": "maven",
+		"databaseType": "sql",
+		"devDatabaseType": "h2Disk",
+		"enableHibernateCache": false,
+		"enableSwaggerCodegen": false,
+		"enableTranslation": true,
+		"jhiPrefix": "jhi",
+		"languages": [
+			"pt-br",
+			"en",
+			"es"
+		],
+		"messageBroker": false,
+		"nativeLanguage": "pt-br",
+		"prodDatabaseType": "postgresql",
+		"searchEngine": "elasticsearch",
+		"skipClient": false,
+		"testFrameworks": [
+			"cucumber"
+		],
+		"websocket": false,
+		"applicationType": "monolith",
+		"packageName": "br.sigo.aplicacao",
+		"packageFolder": "br/sigo/aplicacao",
+		"clientPackageManager": "npm",
+		"useSass": true,
+		"jhipsterVersion": "6.9.1",
+		"creationTimestamp": 1599765240120,
+		"skipServer": false,
+		"clientTheme": "none",
+		"clientThemeVariant": "",
+		"jwtSecretKey": "YzUyMTVmY2Q5OWFiMWM1OTM3YTQ2MjBmMzUwZGQ3ZDUxZDY5NDFiNGE4NWJhMzMyZDJiY2E0ZTQ1N2U3OGYyMmY1YjI4MDFmN2U2MjRlMmYwMWRlYWY1ODE1NGExNmMwMTE0Y2ZhMWQ2YzQ0OWIyMDBhNTQ1NjE0ZWM4ZDAzM2Y=",
+		"embeddableLaunchScript": false,
+		"entitySuffix": "",
+		"dtoSuffix": "DTO",
+		"otherModules": [],
+		"blueprints": []
+	},
+	"entities": [
+		"Funcionario",
+		"Normas",
+		"Consultoria",
+		"Fornecedor",
+		"Produto",
+		"Cliente",
+		"Compra",
+		"Venda",
+		"Fornece",
+		"MateriaPrima",
+		"Processo",
+		"TipoProcesso"
+	]
+}
